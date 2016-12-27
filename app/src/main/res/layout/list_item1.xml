@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:paddingTop="45dp"
+        android:paddingBottom="45dp"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:id="@+id/ll_imageList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_distance"
+                android:layout_alignStart="@+id/tv_distance"
+                android:layout_below="@+id/tv_distance"
+                android:text="TextView" />
+
+
+            <TextView
+                android:id="@+id/tv_make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_id"
+                android:layout_alignRight="@+id/tv_id"
+                android:layout_below="@+id/tv_id"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_make"
+                android:layout_alignStart="@+id/tv_make"
+                android:layout_below="@+id/tv_make"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_miles"
+                android:layout_alignStart="@+id/tv_miles"
+                android:layout_below="@+id/tv_miles"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_model"
+                android:layout_alignStart="@+id/tv_model"
+                android:layout_below="@+id/tv_model"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_shareurl"
+                android:layout_alignStart="@+id/tv_shareurl"
+                android:layout_below="@+id/tv_shareurl"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_status"
+                android:layout_alignStart="@+id/tv_status"
+                android:layout_below="@+id/tv_status"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
